@@ -76,15 +76,23 @@ The project consists in pick one of the amazon review datasets and use PySpark t
 **Results**
 
 - How many Vine reviews and non-Vine reviews were there?
+
 Vine 94
+
 Non-Vine 40471
 
 - How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
+
+
 Vine - 48
+
 Non Vine 15663
 
 - What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+
+
 Vine 51.06%
+
 Non Vine 38.7%
 
 
