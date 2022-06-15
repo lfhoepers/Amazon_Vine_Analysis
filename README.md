@@ -1,7 +1,7 @@
 # Challenge 16 Amazon Vine Analysis
 
 ## Overview of the Project 
-The project consists in pick one of the amazon review datasets and use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Next, we’ll use PySpark, Pandas, or SQL to determine if there is any bias toward favorable reviews from Vine members in your dataset.
+The project consists in pick one of the amazon review datasets and use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Next, we’ll use PySpark, Pandas, or SQL to determine if there is any bias toward favorable reviews from Vine members on the dataset.
 
 
 ## Deliverable 1
@@ -35,16 +35,9 @@ The project consists in pick one of the amazon review datasets and use PySpark t
 ![image](https://user-images.githubusercontent.com/100812079/173957212-756b66e2-1780-4270-8ba5-33b34f133938.png)
 
 
-## Summary Statistics on Suspension Coils
-
-![image](https://user-images.githubusercontent.com/100812079/172732775-c590713a-672f-4faa-8a2e-75aba9d56601.png)
-
-
-![image](https://user-images.githubusercontent.com/100812079/172732756-b5191960-2b82-4b72-9905-287dcac0d85e.png)
-
-The overall variance of all the lots indicates that the manufactoring data meets the design specification, having a variance of 62. However,  it is clear that variance in lot 3 is heavily increasing teh summary variance. Lo 3 has a variance of 170 PSI, meaning it does not pass the manufatcoring specifications. 1 and 2 are good.
-
 ## Deliverable 2
+
+[Vine_Review_Analysis.ipynb](https://github.com/lfhoepers/Amazon_Vine_Analysis/blob/de8df6ba81bdd5ab1a75c8cb4beb7f4b13635c9f/Vine_Review_Analysis.ipynb)
 
 - There is a DataFrame or table for the vine_table data using one of three methods
 
@@ -75,25 +68,35 @@ The overall variance of all the lots indicates that the manufactoring data meets
 
 - The total number of reviews, the number of 5-star reviews, and the percentage 5-star reviews are calculated for all Vine and non-Vine reviews
 
+![image](https://user-images.githubusercontent.com/100812079/173960113-2ad5d016-7d1b-400e-ac77-5a81334a2753.png)
 
-## Study Design: MechaCar vs Competition
 
-I would like to see MechaCar conduct a statistical study on the depreciation of their vehicals similat to that of their competitors.
+## Deliverable 3
 
-Metrics: Depreciation Rate over the life of the vehicle.
+**Results**
 
-The null hypothesis would be there is no statistical difference between rate of depreciation for MechaCar and the competition.
+- How many Vine reviews and non-Vine reviews were there?
+Vine 94
+Non-Vine 40471
 
-The alternative hypothesis would be there is a statistical difference between rate of depreciation for MechaCar and the competition.
+- How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
+Vine - 48
+Non Vine 15663
 
-Statistical test: To complete this study, the analysts at MechaCar would want to use linear regression. as this would show you the depreciation over time.
+- What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+Vine 51.06%
+Non Vine 38.7%
 
-Data: 
-Age
-Mileage
-Condition
-Make
-Model
+
+**Summary**
+
+Based on the results, we can conclude that there was no bias found in the reviews of the vine members for the Video game dataset. 
+We have only 51% of the paid members provided 5 star ratings, and non-paid members providing 5 star raings is much higher at 38.7%. the difference is too low.
+
+For me the numbers of paid is too low to have any decision.
+Following a list of paid vine for each star.
+
+![image](https://user-images.githubusercontent.com/100812079/173960487-038a69a9-1848-4ac8-b01f-8cc963de0188.png)
 
 
 I appreciate the opportunity to present this project, I am available for any clarification.
